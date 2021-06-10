@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_abrir"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:onClick="openGalery"
+        android:text="Abrir"
+        app:layout_constraintBottom_toTopOf="@+id/btn_final"
+        app:layout_constraintEnd_toStartOf="@+id/btn_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="365dp"
+        android:layout_height="408dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/btn_gray"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="52dp"
+        android:text="Gray"
+        app:layout_constraintBottom_toTopOf="@+id/btn_final"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_abrir"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_final"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginStart="135dp"
+        android:text="Final"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
